@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyLaunch - Take Your Business to New Heights</title>
+  <!-- Font Awesome for Social Media Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: rgba(45, 47, 108, 0.2); /* Transparent navy tint */
+      backdrop-filter: blur(10px); /* Frosted glass effect */
+      color: white;
+      flex-wrap: wrap;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .logo span {
+      font-size: 1.8rem;
+    }
+    .header-features {
+      display: flex;
+      gap: 15px;
+      font-size: 0.9rem;
+      margin-left: 20px;
+      color: #ffda79;
+    }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ff7f50;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                  url("https://picsum.photos/1600/900?blur") no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+    .btn {
+      background: #ff7f50;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #e06c3a;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 60px 10%;
+      text-align: center;
+      background: #fff;
+    }
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #2d2f6c;
+    }
+    .feature-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #f1f1f1;
+      padding: 30px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h3 {
+      margin-bottom: 15px;
+      color: #ff7f50;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2d2f6c;
+      color: white;
+    }
+    footer .social-links a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      transition: color 0.3s;
+    }
+    footer .social-links a:hover {
+      color: #ff7f50;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 900px) {
+      .header-features {
+        display: none;
+      }
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(45, 47, 108, 0.9);
+        position: absolute;
+        top: 70px;
+        right: 8%;
+        width: 200px;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      nav ul.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <span>🚀</span> SkyLaunch
+    </div>
+    <div class="header-right">
+      <div class="header-features">
+        <span>⚡ Fast</span>
+        <span>🔒 Secure</span>
+        <span>📈 Scalable</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Take Your Business to New Heights</h1>
+      <p>SkyLaunch helps startups and entrepreneurs scale faster with powerful tools, secure systems, and expert support.</p>
+      <a href="#" class="btn">Get Started Today</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Choose SkyLaunch?</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>⚡ Fast</h3>
+        <p>Experience blazing speed and optimized performance to get your business off the ground quickly.</p>
+      </div>
+      <div class="card">
+        <h3>🔒 Secure</h3>
+        <p>Top-level security ensures your data and business are always protected with advanced encryption.</p>
+      </div>
+      <div class="card">
+        <h3>📈 Scalable</h3>
+        <p>Grow without limits – our platform scales with you, from small startups to global enterprises.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SkyLaunch. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle nav on small screens
+    const toggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
